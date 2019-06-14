@@ -2,7 +2,14 @@
 // This file contains all application-wide Sass variables.
 // -------------------------------------------------------
 
+// change bootstrap default font
 $font-family-sans-serif: "Roboto", sans-serif; // postavljamo vrijednost za bootstrap-ovu varijablu
 
 // PATHS
 $base-url: "/assets/" !default;
+
+// enable bootstrap gradients
+$enable-gradients: true;
+
+// Color system
+$gray-555: #555;

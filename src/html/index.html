@@ -1,16 +1,91 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="/assets/css/bundle.min.css">
+<head>
 
-    <title>Algebra Projekt</title>
-  </head>
-  <body>
-      <h1>Algebra Projekt</h1>
-    <script src="/assets/js/bundle.min.js"></script>
-  </body>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="/assets/css/bundle.min.css">
+
+  <title>Algebra Projekt</title>
+</head>
+
+<body>
+  <!-- BEGIN MAIN NAVIGATION -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark bg-gradient-marinkoDark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://picsum.photos/50">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <!-- ml-auto: da item-s budu desno -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-right" href="#">Product <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-right" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-right" href="#">Pricing</a>
+          </li>
+          <li class="nav-item" data-toggle="modal" data-target="#loginModal">
+            <a class="nav-link text-right" href="#">Sign In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled text-right" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END MAIN NAVIGATION -->
+
+
+  <!-- BEGIN LOGIN MODAL -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" data-keyboard="false" data-backdrop="static">
+    <!-- role="document": For accessibility reasons, all elements with the .modal-dialog class must have a role attribute. The value should be set equal to document -->
+    <div class="modal-dialog modal-sm" role="document">
+      <form id="loginForm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Sign In</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Sign In</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- END LOGIN MODAL -->
+  <!-- JavaScript -->
+  <script src="/assets/js/bundle.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      App.init({
+        login:true
+      });
+    });
+  </script>
+</body>
+
 </html>
