@@ -1,16 +1,16 @@
-let handleLogin = function(options) {
+let handleRegister = function(options) {
   if (options) {
     // imam li objekt
     if (options.login) {
       // ako objekt nema određeno svojstvo, neće baciti grešku
-      $("#loginForm").on("submit", function(e) {
+      $("#registerForm").on("submit", function(e) {
         e.preventDefault();
 
         let data = $(this).getFormData();
         console.log(data);
       });
 
-      $("#loginModal").on("hidden.bs.modal", function(e) {
+      $("#registerModal").on("hidden.bs.modal", function(e) {
         $(this)
           .find("input,textarea,select")
           .val("")
@@ -18,6 +18,10 @@ let handleLogin = function(options) {
           .find("input[type=checkbox], input[type=radio]")
           .prop("checked", "")
           .end();
+
+        $("#registerForm")
+          .parsley()
+          .reset();
       });
     }
   }

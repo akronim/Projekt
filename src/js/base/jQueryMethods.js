@@ -1,12 +1,14 @@
-(function ($) {
-    $.fn.getFormData = function () {
-        let data = {};
-        let dataArray = $(this).serializeArray();
+(function($) {
+  // U ovom prostoru kreirate sve custom jQuery funkcije.
 
-        for (let i = 0; i < dataArray.length; i++) {
-            data[dataArray[i].name] = dataArray[i];
-        }
+  $.fn.getFormData = function() {
+    let data = {};
+    let dataArray = $(this).serializeArray();
 
-        return data;
+    for (let i = 0; i < dataArray.length; i++) {
+      data[dataArray[i].name] = dataArray[i].value;
     }
+
+    return data;
+  };
 })(jQuery);

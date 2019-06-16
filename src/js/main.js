@@ -1,13 +1,22 @@
-/* Application controller */
-let App = function () {
-    "use strict"
+/* Application Controller */
+let App = (function() {
+  "use strict";
 
-    return {
-        init: function (options) {
-            this.initBase(options); 
-        },
-        initBase: function (options) {
-            handleLogin(options);   
-        }
-    };
-}();
+  let settings;
+
+  return {
+    init: function(options) {
+      if (options) {
+        settings = options;
+      }
+
+      this.initBase(settings);
+    },
+    initBase: function(settings) {
+      handleLogin(settings);
+      handleRegister(settings);
+    },
+    initComponents: function(settings) {},
+    initPages: function(settings) {}
+  };
+})();

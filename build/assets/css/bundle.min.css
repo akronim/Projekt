@@ -13321,6 +13321,14 @@ body {
   font-style: normal;
 }
 
+.parsley-errors-list {
+  color: #e74c3c;
+}
+
 .bg-gradient-marinkoDark {
   background: #000 linear-gradient(#000, #555);
+}
+
+.bg-gradient-marinkoMulberry {
+  background: #8d3349 linear-gradient(#8d3349, #c6617a);
 }
