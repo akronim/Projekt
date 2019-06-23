@@ -2,18 +2,29 @@
 // This file contains very basic styles.
 // ------------------------------------------------------
 
-html{
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
 
 *,
 *::before,
-*::after{
-    box-sizing: inherit;
+*::after {
+  box-sizing: inherit;
 }
 
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
+.loader {
+  text-align: center;
+  border-bottom: solid 1px $gray-300;
+  padding: 10px;
 
+  img {
+    width: 60px;
+  }
+  .message {
+    font-weight: 500;
+  }
+}
