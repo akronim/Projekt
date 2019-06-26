@@ -13325,6 +13325,12 @@ body {
   color: #e74c3c;
 }
 
+input.parsley-error {
+  color: #b94a48 !important;
+  background-color: #f2dede !important;
+  border: 1px solid #eed3d7 !important;
+}
+
 .bg-gradient-marinkoDark {
   background: #000 linear-gradient(#000, #555);
 }
