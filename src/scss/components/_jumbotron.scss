@@ -1,0 +1,9 @@
+.jumbotron{
+    @include border-radius(0);
+    background:transparent image("forrest.jpg") no-repeat center;
+    //background:transparent url("https://picsum.photos/1920/1279") no-repeat center;
+    background-size: cover;
+    // text-shadow: 0 0 5px $white;
+    color: $white;
+}
+

@@ -13386,3 +13386,56 @@ input.parsley-error {
 .bg-gradient-marinkoMulberry {
   background: #8d3349 linear-gradient(#8d3349, #c6617a);
 }
+
+.jumbotron {
+  border-radius: 0;
+  background: transparent url("/assets/images/forrest.jpg") no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+
+.home-page .subtitle {
+  position: relative;
+}
+
+.home-page .subtitle::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  height: 4px;
+  width: 40%;
+  left: 50%;
+  box-shadow: 5px 5px 15px #007bff;
+  bottom: 5px;
+  bottom: -5px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.home-page .icon-box {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  border: solid 1px #007bff;
+  position: relative;
+}
+
+.home-page .icon-box i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.home-page .banner {
+  height: 467px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.home-page .banner.first {
+  background: transparent url("https://picsum.photos/1920/1279") no-repeat 0 0;
+  background-size: cover;
+  background-attachment: fixed;
+}
