@@ -13426,6 +13426,7 @@ input.parsley-error {
   left: 0;
   right: 0;
   transform: translateY(-50%);
+  color: #8d3349 !important;
 }
 
 .home-page .banner {
@@ -13436,6 +13437,12 @@ input.parsley-error {
 
 .home-page .banner.first {
   background: transparent url("https://picsum.photos/1920/1279") no-repeat 0 0;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home-page .banner.second {
+  background: transparent url("https://picsum.photos/1200/1200") no-repeat 0 0;
   background-size: cover;
   background-attachment: fixed;
 }

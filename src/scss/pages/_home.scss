@@ -30,7 +30,7 @@
             left: 0;
             right: 0;
             transform: 	translateY(-50%);
-            //color: $mulberry-dark;
+            color: $mulberry-dark !important;
         }
     }
 
@@ -43,6 +43,12 @@
 
     &.first{
         background:transparent url("https://picsum.photos/1920/1279") no-repeat 0 0;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    &.second{
+        background:transparent url("https://picsum.photos/1200/1200") no-repeat 0 0;
         background-size: cover;
         background-attachment: fixed;
     }
